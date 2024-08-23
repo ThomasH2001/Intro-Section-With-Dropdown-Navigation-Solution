@@ -24,6 +24,7 @@ This is a solution to the [Intro section with dropdown navigation challenge on F
 ### Links
 
 - Solution URL: https://github.com/ThomasH2001/Intro-Section-With-Dropdown-Navigation-Solution
+- Live Site URL: https://thomash2001.github.io/Intro-Section-With-Dropdown-Navigation-Solution/
 
 ## My process
 
