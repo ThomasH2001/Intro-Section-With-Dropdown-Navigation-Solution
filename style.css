@@ -1,0 +1,292 @@
+* {
+    font-size: 15px;
+    font-family: Epilogue;
+    margin: 0;
+    font-weight: 500;
+    color: hsl(0, 0%, 41%);
+}
+
+body {
+    background-color: hsl(0, 0%, 98%);
+    min-height: 100vh;
+    position: relative;
+}
+
+.dimmed::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.9;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header::after, main::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+header {
+    padding-top: 31px;
+}
+
+header > img, nav {
+    float: left;
+}
+
+header > img {
+    margin-left: 40px;
+}
+
+#menu-button {
+    float: right;
+    margin-right: 15px;
+    z-index: 3;
+    position: relative;
+}
+
+#menu-button:hover {
+    cursor: pointer;
+}
+
+header div {
+    z-index: 2;
+}
+
+nav {
+    width: 385px;
+    margin-left: 55px;
+}
+
+.dropdown > img {
+    transform: translate(7px, -1px);
+}
+
+.dropdown {
+    padding-right: 7px;
+}
+
+.dropdown ul {
+    display: none;
+    width: 116px;
+    height: 128px;
+    position: absolute;
+    left: 306px;
+    top: 70px;
+    background-color: white;
+    flex-direction: column;
+    padding: 22px;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+.dropdown:first-child ul {
+    width: 153px;
+    height: 160px;
+    left: 113px;
+}
+
+.dropdown ul img {
+    padding-right: 13px !important;
+    transform: translateY(4px);
+}
+
+#auth, main > img {
+    float: right;
+}
+
+#auth {
+    width: 184px;
+    margin-right: 40px;
+}
+
+#auth a:last-child li {
+    width: 104px;
+    height: 42px;
+    border: 1px solid hsl(0, 0%, 41%);
+    box-sizing: border-box;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 42px;
+    margin-top: -15px;
+}
+
+main {
+    padding: 65px 20px 0 53px;
+    width: 100%;
+    max-width: 1220px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+main > img {
+    width: 480px;
+    object-fit: contain;
+    display: block;
+}
+
+main div {
+    padding-top: 100px;
+    width: 480px;
+}
+
+h1 {
+    font-size: 72px;
+    font-weight: 700;
+    color: hsl(0, 0%, 8%);
+    margin-bottom: 65px;
+}
+
+p, #learn-more {
+    font-size: 18px;
+}
+
+p {
+    width: 430px;
+    margin-bottom: 55px;
+}
+
+main ul {
+    max-width: 535px;
+    margin: 0 auto;
+}
+
+#learn-more {
+    display: block;
+    width: 162px;
+    height: 55px;
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+    border: 1px solid hsl(0, 0%, 8%);
+    border-radius: 16px;
+    margin-bottom: 127px;
+    line-height: 56px;
+    text-align: center;
+}
+
+a *:hover, .dropdown:hover:not(:has(*:hover)) {
+    cursor: pointer;
+    color: hsl(0, 0%, 8%);
+}
+
+#learn-more:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
+#auth a:last-child li:hover {
+    border: 1px solid hsl(0, 0%, 8%);
+}
+
+@media (max-width: 1039px) {
+    main {
+        padding: 24px 0 0;
+    }
+    
+    main > * {
+        float: none !important;
+        margin: 0 auto !important;
+    }
+
+    main > img {
+        width: auto;
+        max-width: 100%;
+        max-height: 282px;
+    }
+
+    main div {
+        padding: 50px 15px 0;
+        text-align: center;
+        width: initial;
+    }
+
+    h1 {
+        margin-bottom: 31px;
+        font-size: 34px;
+    }
+
+    p {
+        margin-bottom: 29px;
+        width: initial;
+    }
+
+    #learn-more {
+        margin-bottom: 47px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 48px;
+        line-height: 48px;
+    }
+}
+
+@media (max-width: 860px) {
+    header div {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0px;
+        width: 240px;
+        height: 100%;
+        padding: 80px 0 0 24px;
+        box-sizing: border-box;
+        background-color: hsl(0, 0%, 98%);
+    }
+
+    header div * {
+        float: none !important;
+        margin: 0 !important;
+        width: fit-content !important;
+        padding: 0 !important;
+    }
+
+    header ul {
+        display: initial;
+        padding: 0 !important;
+    }
+
+    .dropdown ul {
+        position: initial;
+        background-color: initial;
+        padding: 26px 0 7px 21px !important;
+        height: 92px !important;
+        box-sizing: content-box !important;
+    }
+
+    .dropdown:first-child ul {
+        height: 141px !important;
+    }
+
+    nav > ul > li, nav > ul > a > li {
+        margin-bottom: 23px !important;
+    }
+
+    nav {
+        margin-bottom: 40px !important;
+    }
+
+    #auth li {
+        width: 196px !important;
+        text-align: center !important;
+        margin-bottom: 15px !important;
+    }
+}
+
+@media (max-width: 429px) {
+    main ul {
+        flex-direction: column;
+        height: 168px;
+    }
+}

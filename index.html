@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+  <header>
+    <img src="./images/logo.svg" alt="snap">
+    <img id="menu-button" src="./images/icon-menu.svg" alt="menu button" hidden>
+    <div>
+      <nav>
+        <ul>
+          <li class="dropdown">
+            Features<img src="./images/icon-arrow-down.svg" alt="downwards arrow">
+            <ul>
+              <a><li><img src="./images/icon-todo.svg" alt="" style="padding-left: 2px !important;">Todo List</li></a>
+              <a><li><img src="./images/icon-calendar.svg" alt="">Calendar</li></a>
+              <a><li><img src="./images/icon-reminders.svg" alt="" style="padding-left: 3px !important;">Reminders</li></a>
+              <a><li><img src="./images/icon-planning.svg" alt="">Planning</li></a>
+            </ul>
+          </li>
+          <li class="dropdown">
+            Company<img src="./images/icon-arrow-down.svg" alt="downwards arrow">
+            <ul>
+              <a><li>History</li></a>
+              <a><li>Our Team</li></a>
+              <a><li>Blog</li></a>
+            </ul>
+          </li>
+          <a><li>Careers</li></a>
+          <a><li>About</li></a>
+        </ul>
+      </nav>
+      <ul id="auth">
+        <a><li>Login</li></a>
+        <a><li>Register</li></a>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <img src="./images/image-hero-desktop.png" alt="man using laptop">
+    <div>
+      <h1>Make remote work</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+      <a id="learn-more">Learn more</a>
+      <ul>
+        <li><img src="./images/client-databiz.svg" alt="databiz"></li>
+        <li><img src="./images/client-audiophile.svg" alt="audiophile"></li>
+        <li><img src="./images/client-meet.svg" alt="meet"></li>
+        <li><img src="./images/client-maker.svg" alt="maker"></li>
+      </ul>
+    </div>
+  </main>
+</body>
+</html>
