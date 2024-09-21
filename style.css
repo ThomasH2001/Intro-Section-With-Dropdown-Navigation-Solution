@@ -112,7 +112,8 @@ nav {
     margin-right: 40px;
 }
 
-#auth a:last-child li {
+#auth li:last-child a {
+    display: block;
     width: 104px;
     height: 42px;
     border: 1px solid hsl(0, 0%, 41%);
@@ -176,7 +177,7 @@ main ul {
     text-align: center;
 }
 
-a *:hover, .dropdown:hover:not(:has(*:hover)) {
+a:hover, .dropdown:hover:not(:has(*:hover)) {
     cursor: pointer;
     color: hsl(0, 0%, 8%);
 }
@@ -187,7 +188,7 @@ a *:hover, .dropdown:hover:not(:has(*:hover)) {
     cursor: pointer;
 }
 
-#auth a:last-child li:hover {
+#auth li:last-child a:hover {
     border: 1px solid hsl(0, 0%, 8%);
 }
 
